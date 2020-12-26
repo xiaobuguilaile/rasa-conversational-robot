@@ -33,6 +33,7 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - 拜拜
     - 再见！
     - 下次见~
     - 改天再聊哈
@@ -44,6 +45,8 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - 对呀
+    - 是的
     - 当然
     - 决然呀
     - 确实如此
@@ -57,6 +60,8 @@ nlu:
     - don't like that
     - no way
     - not really
+    - 不对
+    - 绝不是
     - 不可能
     - 不是这样
     - 我不这样想
@@ -76,6 +81,7 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+    - 太好了
     - 棒极了
     - 非常好
     - 相当给力
@@ -97,9 +103,58 @@ nlu:
     - so sad
     - 糟透了
     - 特别难受
+    - 不开心
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - 你是机器人吗？
+    - 你是人类吗？
+    - 我是在跟机器人说话吗？
+    - 我是在跟人类沟通吗？
+- intent: request_makeup
+  examples: |
+    - check makeup
+    - tell me about makeup
+    - 查询化妆品
+    - 查看化妆品
+    - 麻烦帮我查一下化妆品
+    - 我要查化妆品
+    - 我想了解一下化妆品
+    - 能跟我聊聊[资生堂](brand)的产品吗
+    - 我想知道[兰蔻](brand)的[洗面奶]（category）怎么样
+    - [阿玛尼](brand)的[香水](category)
+    - 帮我查下[海蓝之谜](brand)的[粉底液](category)好不好
+    - 你觉得我可以用[雅诗兰黛](brand)的[眼线笔](category)吗
+    - 你推荐[娇韵诗](brand)的[护手霜]吗
+- intent: request_price
+  examples: |
+    - how much
+    - how much is it
+    - can you tell me the price
+    - can you tell me the price of it
+    - 多少钱
+    - 这个产品多少钱
+    - 这个产品的价格是多少
+    - [兰蔻](brand)的[小黑瓶](product)多少钱一瓶
+    - 帮我查下[玉兰油](brand)[大红水](product)的价格是多少
+    - 想问下[小棕瓶](product)的售价
+    - 我想买一瓶[香奈儿](brand)的[蔚蓝男士香精](product)，请问多少钱
+
+- intent: request_country
+  examples: |
+    - which country does [Armani](brand) belongs to
+    - the origin of [Dior](brand)
+    - [雅诗兰黛](brand)是哪国的
+    - 请问[欧莱雅](brand)是哪个国家的品牌
+    - [植村秀](brand)是日本的吗？
+    - [赫莲娜]属于意大利还是法国
+
+- intent: request_competitor
+  examples: |
+    - competitors of [ANRII](product)
+    - which product could match with [Lancome196](brand)
+    - [希思黎](brand)[钛黑瓶](product)的竞品有哪些
+    -
