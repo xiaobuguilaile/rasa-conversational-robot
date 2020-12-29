@@ -9,17 +9,99 @@ intents:
 - mood_great
 - mood_unhappy
 - bot_challenge
+- thanks
+- chitchat
+- stop
+- request_makeup
+- request_price
+- request_country
+- request_competitor
+
+# 后续可增加 platform, eg. Tmall, 京东等
+entities:
+- brand
+- category
+- product
+slots:
+  brand:
+    type: any
+      auto_fill: false
+      influence_conversation: false
+  category:
+    type: any
+      auto_fill: false
+      influence_conversation: false
+  product:
+    type: any
+      auto_fill: false
+      influence_conversation: false
 responses:
   utter_greet:
-  - text: Hey! How are you?
+  - text: 嗨！你好吗？
+  - text: 你最近怎么样呀？
+  - text: 你的肤色比之前好了很多呢~
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
+    text: '分享给你一些开心的东东~:'
   utter_did_that_help:
-  - text: Did that help you?
+  - text: 这对您有帮忙吗？
   utter_happy:
-  - text: Great, carry on!
+  - text: 很不错哦
+  - text: 真为你感动高兴
   utter_goodbye:
+  - text: 再见！
+  - text: 拜拜~
+  - text: 要记得来找我玩哦~
+  - text: Call me!
   - text: Bye
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+  - text: 我是您的人工智能小助手 Labubu~
+  utter_affirm:
+    - text: 嗯嗯，好的！
+    - text: 嗯嗯，很开心能够帮您解决问题~
+    - text: 嗯嗯，还需要什么我能够帮助您的呢？
+  utter_deny:
+    - text: 主人，您不开心吗？不要离开我哦
+    - text: 怎么了，主人？
+  utter_thanks:
+    - text: 嗯呢。不用客气~
+    - text: 这是我应该做的，主人~
+    - text: 嗯嗯，合作愉快！
+  utter_default:
+    - text: 很抱歉，布布我没有听懂，您可以换个说法吗？
+    - text: 没听懂耶~ 您可以再解释一下？
+  utter_ask_continue:
+    - text: 请问您还要继续吗?
+    - text: 请问还有什么可以帮到您的吗？
+  utter_noworries:
+    - text: 不用客气 :)
+    - text: 没事啦
+    - text: 不客气哈，都是老朋友了 :)
+  utter_chitchat:
+    - text: 呃呃呃呃呃
+    - text: 您这是在尬聊吗？
+  utter_ask_brand:
+    - text: 请问您要问哪个品牌（brand）的产品呢？
+    - text: 这是哪个品牌（brand）的呢
+  utter_ask_category:
+    - text: 请问您要问哪个品类（category）的产品呢？
+    - text: 这是哪个品类（category）的呢？
+  utter_ask_product:
+    - text: 请问您要问哪个产品？
+    - text: 请问您咨询哪个产品？
+actions:
+  - utter_affirm
+  - utter_deny
+  - utter_greet
+  - utter_happy
+  - utter_goodbye
+  - utter_thanks
+  - utter_chitchat
+  - utter_noworries
+  - utter_ask_continue
+  - utter_iamabot
+  - utter_did_that_help
+  - utter_cheer_up
+  - utter_ask_brand
+  - utter_ask_category
+  - utter_ask_product

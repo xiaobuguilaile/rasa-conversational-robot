@@ -18,8 +18,19 @@
         source activate rasa
     3.安装 rasa==0.32.0:
         pip install rasa-x --extra-index-url https://pypi.rasa.com/simple
+    # Rasa X可视化： Rasa X 是用于对话驱动开发（CDD）的工具，它是聆听用户并使用这些见解改善AI助手的过程。
+        
+     
  
 > 注意：因为rasa更新比较快，依赖环境随时会发生变化，建议使用conda的虚拟环境
+
+##  文件概述
+
+  - data/core/ - 包含故事
+  - data/nlu - 包含NLU训练数据
+  - actions - 包含自定义动作代码
+  - domain.yml - domain文件，bot回应的模板
+  - config.yml - NLU管道和策略集和的训练配置
 
 
 ## 操作流程
