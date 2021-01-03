@@ -133,3 +133,6 @@ dmypy.json
 
 # models
 models
+
+# data
+data/total_word_feature_extractor_zh.dat

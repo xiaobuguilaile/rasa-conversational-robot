@@ -1,47 +1,5 @@
 [
   {
-    "text": "\u80fd\u8ddf\u6211\u804a\u804a\u8d44\u751f\u5802\u7684\u4ea7\u54c1\u5417",
-    "entities": [
-      {
-        "start": 5,
-        "end": 8,
-        "value": "\u8d44\u751f\u5802",
-        "entity": "brand"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "\u6211\u60f3\u77e5\u9053\u5170\u853b\u7684[\u6d17\u9762\u5976]\uff08category\uff09\u600e\u4e48\u6837",
-    "entities": [
-      {
-        "start": 4,
-        "end": 6,
-        "value": "\u5170\u853b",
-        "entity": "brand"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "\u963f\u739b\u5c3c\u7684\u9999\u6c34",
-    "entities": [
-      {
-        "start": 0,
-        "end": 3,
-        "value": "\u963f\u739b\u5c3c",
-        "entity": "brand"
-      },
-      {
-        "start": 4,
-        "end": 6,
-        "value": "\u9999\u6c34",
-        "entity": "category"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
     "text": "\u5e2e\u6211\u67e5\u4e0b\u6d77\u84dd\u4e4b\u8c1c\u7684\u7c89\u5e95\u6db2\u597d\u4e0d\u597d",
     "entities": [
       {
@@ -57,156 +15,15 @@
         "entity": "category"
       }
     ],
-    "predicted_entities": []
-  },
-  {
-    "text": "\u4f60\u89c9\u5f97\u6211\u53ef\u4ee5\u7528\u96c5\u8bd7\u5170\u9edb\u7684\u773c\u7ebf\u7b14\u5417",
-    "entities": [
+    "predicted_entities": [
       {
-        "start": 7,
-        "end": 11,
-        "value": "\u96c5\u8bd7\u5170\u9edb",
-        "entity": "brand"
-      },
-      {
-        "start": 12,
-        "end": 15,
-        "value": "\u773c\u7ebf\u7b14",
-        "entity": "category"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "\u4f60\u63a8\u8350\u5a07\u97f5\u8bd7\u7684[\u62a4\u624b\u971c]\u5417",
-    "entities": [
-      {
-        "start": 3,
-        "end": 6,
-        "value": "\u5a07\u97f5\u8bd7",
-        "entity": "brand"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "\u5170\u853b\u7684\u5c0f\u9ed1\u74f6\u591a\u5c11\u94b1\u4e00\u74f6",
-    "entities": [
-      {
-        "start": 0,
-        "end": 2,
-        "value": "\u5170\u853b",
-        "entity": "brand"
-      },
-      {
-        "start": 3,
-        "end": 6,
-        "value": "\u5c0f\u9ed1\u74f6",
-        "entity": "product"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "\u5e2e\u6211\u67e5\u4e0b\u7389\u5170\u6cb9\u5927\u7ea2\u6c34\u7684\u4ef7\u683c\u662f\u591a\u5c11",
-    "entities": [
-      {
-        "start": 4,
-        "end": 7,
-        "value": "\u7389\u5170\u6cb9",
-        "entity": "brand"
-      },
-      {
-        "start": 7,
-        "end": 10,
-        "value": "\u5927\u7ea2\u6c34",
-        "entity": "product"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "\u60f3\u95ee\u4e0b\u5c0f\u68d5\u74f6\u7684\u552e\u4ef7",
-    "entities": [
-      {
-        "start": 3,
-        "end": 6,
-        "value": "\u5c0f\u68d5\u74f6",
-        "entity": "product"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "\u6211\u60f3\u4e70\u4e00\u74f6\u9999\u5948\u513f\u7684\u851a\u84dd\u7537\u58eb\u9999\u7cbe\uff0c\u8bf7\u95ee\u591a\u5c11\u94b1",
-    "entities": [
-      {
-        "start": 5,
-        "end": 8,
-        "value": "\u9999\u5948\u513f",
-        "entity": "brand"
-      },
-      {
+        "entity": "category",
         "start": 9,
-        "end": 15,
-        "value": "\u851a\u84dd\u7537\u58eb\u9999\u7cbe",
-        "entity": "product"
+        "end": 12,
+        "confidence_entity": 0.9946200847625732,
+        "value": "\u7c89\u5e95\u6db2",
+        "extractor": "DIETClassifier"
       }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "\u96c5\u8bd7\u5170\u9edb\u662f\u54ea\u56fd\u7684",
-    "entities": [
-      {
-        "start": 0,
-        "end": 4,
-        "value": "\u96c5\u8bd7\u5170\u9edb",
-        "entity": "brand"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "\u8bf7\u95ee\u6b27\u83b1\u96c5\u662f\u54ea\u4e2a\u56fd\u5bb6\u7684\u54c1\u724c",
-    "entities": [
-      {
-        "start": 2,
-        "end": 5,
-        "value": "\u6b27\u83b1\u96c5",
-        "entity": "brand"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "\u690d\u6751\u79c0\u662f\u65e5\u672c\u7684\u5417\uff1f",
-    "entities": [
-      {
-        "start": 0,
-        "end": 3,
-        "value": "\u690d\u6751\u79c0",
-        "entity": "brand"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "\u5e0c\u601d\u9ece\u949b\u9ed1\u74f6\u7684\u7ade\u54c1\u6709\u54ea\u4e9b",
-    "entities": [
-      {
-        "start": 0,
-        "end": 3,
-        "value": "\u5e0c\u601d\u9ece",
-        "entity": "brand"
-      },
-      {
-        "start": 3,
-        "end": 6,
-        "value": "\u949b\u9ed1\u74f6",
-        "entity": "product"
-      }
-    ],
-    "predicted_entities": []
+    ]
   }
 ]

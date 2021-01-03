@@ -24,7 +24,7 @@ pipeline:
    - name: EntitySynonymMapper # 同义实体映射表
    - name: ResponseSelector
      epochs: 100
-   - name: FallbackClassifier
+   - name: FallbackClassifier # 反馈分类器
      threshold: 0.3
      ambiguity_threshold: 0.1
 

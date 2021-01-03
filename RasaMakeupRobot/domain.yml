@@ -1,6 +1,4 @@
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+
 intents:
 - greet
 - goodbye
@@ -13,28 +11,43 @@ intents:
 - chitchat
 - stop
 - request_makeup
+    use_entities:[brand, category]
 - request_price
+    use_entities:[brand, product]
 - request_country
+    use_entities:[brand]
 - request_competitor
+    use_entities:[brand, product]
 
-# 后续可增加 platform, eg. Tmall, 京东等
+
+# The entities section lists all entities that can be extracted by any entity extractor in your NLU pipeline.
+# If you are using the feature Entity Roles and Groups you also need to list the roles and groups of an entity in this section.
 entities:
-- brand
-- category
-- product
+- brand  # custom entity extracted by DIETClassifier
+- category  # custom entity extracted by DIETClassifier
+- product  # custom entity extracted by DIETClassifier
+# 后续可增加 platform, eg. Tmall, 京东等
+
+
+# Slots are defined in the slots section of your domain with their name, type and if and how they should influence the assistant's behavior.
+# If you want to store information in a slot without it influencing the conversation, set influence_conversation: false when defining your slot.
 slots:
   brand:
-    type: any
-      auto_fill: false
-      influence_conversation: false
+    type: text
+    auto_fill: false
+    influence_conversation: false
   category:
-    type: any
-      auto_fill: false
-      influence_conversation: false
+    type: text
+    auto_fill: false
+    influence_conversation: false
   product:
+    type: text
+    auto_fill: false
+    influence_conversation: false
+  requested_slot:
     type: any
-      auto_fill: false
-      influence_conversation: false
+    influence_conversation: false
+
 responses:
   utter_greet:
   - text: 嗨！你好吗？
@@ -89,6 +102,10 @@ responses:
   utter_ask_product:
     - text: 请问您要问哪个产品？
     - text: 请问您咨询哪个产品？
+
+forms:
+  makeup_form: {}
+
 actions:
   - utter_affirm
   - utter_deny
@@ -105,3 +122,7 @@ actions:
   - utter_ask_brand
   - utter_ask_category
   - utter_ask_product
+
+session_config:
+  session_expiration_time: 60  # value in minutes, 0 means infinitely long
+  carry_over_slots_to_new_session: true
