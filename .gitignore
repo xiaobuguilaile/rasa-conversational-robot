@@ -135,4 +135,12 @@ dmypy.json
 models
 
 # data
-data/total_word_feature_extractor_zh.dat
+#data/total_word_feature_extractor_zh.dat
+#CrossWOZ/convlab2/nlu/jointBERT/crosswoz/data/
+data/*
+
+# output
+output/*
+
+#
+CrossWOZ
