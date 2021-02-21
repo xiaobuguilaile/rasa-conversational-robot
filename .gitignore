@@ -142,5 +142,9 @@ data/*
 # output
 output/*
 
-#
+# CrossWOZ data
 CrossWOZ
+
+# rasa-ted
+RasaTED/models/*
+RasaTED/data/*
